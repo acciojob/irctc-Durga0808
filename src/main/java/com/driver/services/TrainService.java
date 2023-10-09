@@ -112,7 +112,7 @@ public class TrainService {
         List<Ticket>tickets=train.getBookedTickets();
 
         for(Ticket t:tickets){
-            if(t.getFromStation().equals(station.toString())){
+            if(t.getFromStation()toString().equals(station.toString())){
                 passengerCnt+=t.getPassengersList().size();
             }
         }
@@ -161,6 +161,7 @@ public class TrainService {
                     if(reachingTime>=startTimeinMin&&reachingTime<=lastTimeinMin){
                         trainList.add(t.getTrainId());
                     }
+                    i++;
                 }
             }
         }
